@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <link rel="stylesheet" href="asets/css/bootstrap.css">
+</head>
+<body>
+<section class="container mt-5">
+    <h1 id="h1ID">What is BOM & What is DOM</h1>
+    <h1 class="h1Class">What is BOM & What is DOM</h1>
+    <h2>What really JS DO?</h2>
+    <h2>What really JS DO?</h2>
+    <hr>
+    <input class="form-control" type="text" name="cusName">
+    <button class="btn btn-danger mt-3">Test</button>
+</section>
+
+
+<script>
+    //so first of all we need to find a way to select DOM
+    //elements before changing them
+
+    //so what are the ways to select DOM elements.?
+    document.getElementById("element_id"); //will return single element
+    document.getElementsByName("name_attribute")//will return a list
+    document.getElementsByClassName("class_name");//will return a list
+    document.getElementsByTagName("element_name");//will return a list
+    document.querySelector("css_selector");//will return a single element
+    document.querySelectorAll("css_selector");//will return a list
+
+
+</script>
+</body>
+</html>

@@ -9,7 +9,7 @@
 <section class="container mt-5">
     <h1 id="h1ID">What is BOM & What is DOM</h1>
     <h1 class="h1Class">What is BOM & What is DOM</h1>
-    <h2>What really JS DO?</h2>
+    <h2 class="h1">What really JS DO?</h2>
     <h2>What really JS DO?</h2>
     <hr>
     <input class="form-control" type="text" name="cusName">
@@ -28,6 +28,11 @@
     document.getElementsByTagName("element_name");//will return a list
     document.querySelector("css_selector");//will return a single element
     document.querySelectorAll("css_selector");//will return a list
+
+
+    document.querySelector("button").addEventListener("click", function () {
+        alert("hello");
+    })
 
 
 </script>

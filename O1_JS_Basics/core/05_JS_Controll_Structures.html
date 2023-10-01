@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Control Structures</title>
+</head>
+<body>
+<h1>This is why we called Js and Java are equal in syntactically</h1>
+<ul>
+    <li>If</li>
+    <li>Else If</li>
+    <li>SWITCH</li>
+    <li>Ternary Operator</li>
+    <li>== & ===</li>
+</ul>
+
+
+<script>
+
+
+<!--What about If condition-->
+let bool=true;
+if (bool){
+    console.log("Condition is True")
+}else{
+    console.log("Condition is False")
+}
+
+
+
+
+console.log("=============================");
+
+// What about Else if.? Is it same as Java.?
+let source="CMJD";
+
+if (source=="IJSE"){
+    console.log("Source is equal to IJSE");
+}else if(source=="GDSE"){
+    console.log("Source is equal to GDSE");
+}else if(source=="CMJD"){
+    console.log("Source is equal to CMJD");
+}else{
+    console.log("Source is not equal to Any Thing");
+}
+
+
+
+
+console.log("=============================");
+// So what about java switch case.?
+
+let option="B";
+switch (option){
+    case "A":
+        console.log("Option is A");
+        break;
+    case "B":
+        console.log("Option is B");
+        break;
+    case "C":
+        console.log("Option is C");
+        break;
+    default:
+        console.log("Option is Default");
+}
+
+// So as I said these are all same as Java, they are equal syntactically
+//If you know java that means it is easy for you to learn JS also
+
+console.log("=============================");
+//At the end what about ternary operator.?
+let outPut=(10>20)?true:false;
+console.log(outPut);
+
+
+//But there is something that you need to know here specially
+console.log(10==10);//not checking type //true
+console.log(10=="10");//not checking type //true
+console.log(10==="10");//false//but if you put === in js. it will check the type compatibility also
+
+// That's all
+
+</script>
+</body>
+</html>

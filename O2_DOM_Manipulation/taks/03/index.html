@@ -33,11 +33,12 @@
     var btnIntcrement = document.querySelector("#btnIncrement");
     var display = document.querySelector("#display");
     var txt = document.querySelector("#txt");
-    var txtValue = parseInt(document.querySelector("#txt").innerText);
+    var txtValue = parseInt(document.querySelector("#txt").value);
 
     startBtn.addEventListener("click",function (){
 
         setInterval(function(){
+
             display.innerText = parseInt(txt.value)+1;
         },2000);
     });

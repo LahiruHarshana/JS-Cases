@@ -38,6 +38,7 @@
     var txtValue = parseInt(document.querySelector("#txt").value);
 
     startBtn.addEventListener("click",function (){
+        clearInterval(oneIntervale);
         oneIntervale = setInterval(function(){
             txtValue++;
             display.innerText =txtValue;

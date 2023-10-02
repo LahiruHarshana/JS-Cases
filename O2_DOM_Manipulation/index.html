@@ -18,21 +18,10 @@
 
 
 <script>
-    //so first of all we need to find a way to select DOM
-    //elements before changing them
 
-    //so what are the ways to select DOM elements.?
-    document.getElementById("element_id"); //will return single element
-    document.getElementsByName("name_attribute")//will return a list
-    document.getElementsByClassName("class_name");//will return a list
-    document.getElementsByTagName("element_name");//will return a list
-    document.querySelector("css_selector");//will return a single element
-    document.querySelectorAll("css_selector");//will return a list
-
-
-    document.querySelector("button").addEventListener("click", function () {
-        alert("hello");
-    })
+    document.querySelector("#h1ID").addEventListener("click",function (){
+        document.querySelector("#h1ID").remove();
+    });
 
 
 </script>

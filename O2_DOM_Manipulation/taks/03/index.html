@@ -27,6 +27,8 @@
 
 <script>
 
+    let oneIntervale;
+
     var startBtn = document.querySelector("#btnStart");
     var btnStop = document.querySelector("#btnStop");
     var btnMinus = document.querySelector("#btnMinus");
@@ -36,12 +38,17 @@
     var txtValue = parseInt(document.querySelector("#txt").value);
 
     startBtn.addEventListener("click",function (){
-
-        setInterval(function(){
+        oneIntervale = setInterval(function(){
             txtValue++;
             display.innerText =txtValue;
-        },2000);
+        },200);
     });
+
+    btnStop.addEventListener("click",function (){
+        clearInterval(oneIntervale);
+    });
+
+
 
 
 </script>

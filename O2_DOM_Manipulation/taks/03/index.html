@@ -41,6 +41,7 @@
         oneIntervale = setInterval(function(){
             txtValue++;
             display.innerText =txtValue;
+            txt.value = txtValue;
         },200);
     });
 
@@ -50,11 +51,15 @@
 
     btnMinus.addEventListener("click",function (){
         display.innerText = parseInt(display.innerText)-1;
+        txt.value = parseInt(display.innerText);
+
     });
 
 
     btnIntcrement.addEventListener("click",function (){
         display.innerText = parseInt(display.innerText)+1;
+        txt.value = parseInt(display.innerText);
+
     });
 
 

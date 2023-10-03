@@ -35,15 +35,15 @@
     var btnIntcrement = document.querySelector("#btnIncrement");
     var display = document.querySelector("#display");
     var txt = document.querySelector("#txt");
-    var txtValue = parseInt(document.querySelector("#txt").value);
 
     startBtn.addEventListener("click",function (){
+        var txtValue = parseInt(document.querySelector("#txt").value);
         clearInterval(oneIntervale);
         oneIntervale = setInterval(function(){
             txtValue++;
             display.innerText =txtValue;
             txt.value = txtValue;
-        },200);
+        },1000);
     });
 
     btnStop.addEventListener("click",function (){
@@ -62,9 +62,6 @@
         txt.value = parseInt(display.innerText);
 
     });
-
-
-
 
 
 </script>

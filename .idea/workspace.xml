@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7661a20-25d0-4ece-8b12-b13de9e13ffe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/O2_DOM_Manipulation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/O2_DOM_Manipulation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/O2_DOM_Manipulation/taks/03/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/O2_DOM_Manipulation/taks/03/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +53,8 @@
       <updated>1696135924533</updated>
       <workItem from="1696135925722" duration="3658000" />
       <workItem from="1696139864208" duration="3717000" />
+      <workItem from="1696267007775" duration="3076000" />
+      <workItem from="1696270630410" duration="8000" />
     </task>
     <servers />
   </component>

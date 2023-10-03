@@ -42,9 +42,14 @@
         oneIntervale = setInterval(function(){
             txtValue++;
             display.innerText =txtValue;
-            txt.value = txtValue;
         },1000);
     });
+
+    document.querySelector("#txt").addEventListener("input",function () {
+        var txtValue = parseInt(document.querySelector("#txt").value);
+    });
+
+
 
     btnStop.addEventListener("click",function (){
         clearInterval(oneIntervale);
@@ -52,15 +57,11 @@
 
     btnMinus.addEventListener("click",function (){
         display.innerText = parseInt(display.innerText)-1;
-        txt.value = parseInt(display.innerText);
-
     });
 
 
     btnIntcrement.addEventListener("click",function (){
         display.innerText = parseInt(display.innerText)+1;
-        txt.value = parseInt(display.innerText);
-
     });
 
 

@@ -37,7 +37,8 @@
     var txt = document.querySelector("#txt");
 
     startBtn.addEventListener("click",function (){
-        var txtValue = parseInt(document.querySelector("#txt").value);
+        var txtValue = parseInt(display.innerText);
+
         clearInterval(oneIntervale);
         oneIntervale = setInterval(function(){
             txtValue++;

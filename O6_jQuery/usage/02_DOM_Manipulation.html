@@ -12,7 +12,7 @@
     <h1 id="main">Traversing Methods in Jquery</h1>
     <section class="row">
         <div class="col-3">
-            <input class="form-control" type="text" placeholder="input">
+            <input id="input" class="form-control" type="text" placeholder="input">
             <button id="btn" class="btn btn-danger mt-2">Test</button>
 
         </div>
@@ -55,6 +55,9 @@
 
     $("#main").text("hi");
     let hi = $('#main').text();
+
+    $("#input").val("hello");
+
 </script>
 </body>
 </html>

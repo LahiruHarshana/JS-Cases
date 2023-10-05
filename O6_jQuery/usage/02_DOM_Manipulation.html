@@ -2,20 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>DOM Manipulation with JQuery</title>
+    <link rel="stylesheet" href="../asets/css/bootstrap.min.css">
 </head>
 <body>
-<h1>Traversing Methods in Jquery</h1>
-<ul>
-    <li>append()</li>
-    <li>prepend()</li>
-    <li>remove()</li>
-    <li>text()</li>
-    <li>val()</li>
-    <li>click()</li>
-    <li>attr()</li>
-    <li>css</li>
-</ul>
 
+
+<section class="container mt-5">
+    <h1 id="main">Traversing Methods in Jquery</h1>
+    <section class="row">
+        <div class="col-3">
+            <input class="form-control" type="text" placeholder="input">
+            <button id="btn" class="btn btn-danger mt-2">Test</button>
+
+        </div>
+        <div class="col">
+            <ol class="list-group">
+                <li class="list-group-item">A</li>
+            </ol>
+        </div>
+    </section>
+    <section class="row mt-5">
+        <div class="col-12">
+            <ul id="ul" class="list-group">
+                <li>append()</li>
+                <li>prepend()</li>
+                <li>remove()</li>
+                <li>text()</li>
+                <li>val()</li>
+                <li>click()</li>
+                <li>attr()</li>
+                <li>css</li>
+            </ul>
+        </div>
+    </section>
+</section>
+<script src="../asets/js/bootstrap.js"></script>
+
+<script src="../asets/js/jquery.js"></script>
+
+
+
+
+
+
+<script>
+
+    $("#main").css({
+        "color":"red",
+        "font-size":"100px"
+    });
+</script>
 </body>
 </html>

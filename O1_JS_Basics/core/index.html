@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotating Border Animation</title>
+  <style>
+    /* Define the styles for the container div */
+    .container {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before,
+    .container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid transparent;
+      border-radius: 50%;
+      animation: rotate-border 4s linear infinite;
+    }
+    @keyframes rotate-border {
+      0% {
+        transform: rotate(0deg);
+        border: 2px solid red;
+      }
+      25% {
+        transform: rotate(90deg);
+        border: 2px solid blue;
+      }
+      50% {
+        transform: rotate(180deg);
+        border: 2px solid green;
+      }
+      75% {
+        transform: rotate(270deg);
+        border: 2px solid orange;
+      }
+      100% {
+        transform: rotate(360deg);
+        border: 2px solid red;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container"></div>
+</body>
+</html>
